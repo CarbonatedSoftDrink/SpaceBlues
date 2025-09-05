@@ -17,3 +17,4 @@ class Card:
     isBase = False
     costToRemove = 0
     isInjury = False
+    discardedStatus = False
