@@ -14,6 +14,6 @@ class Card:
     special2 = 0
 
     costToPurchase = 0
-    isBase = 0
+    isBase = False
     costToRemove = 0
-    isInjury = 0
+    isInjury = False
