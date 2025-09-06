@@ -18,3 +18,16 @@ class Card:
     costToRemove = 0
     isInjury = False
     discardedStatus = False
+
+class playerDeck:
+
+    def __init__(self, playerNumber, playerChar):
+        self.playerNumber = playerNumber
+        self.char = playerChar
+
+class playerDiscardPile:
+
+    def __init__(self, playerNumber, playerChar):
+        self.playerNumber = playerNumber
+        self.char = playerChar
+
