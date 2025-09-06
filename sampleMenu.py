@@ -68,9 +68,21 @@ class CharSelect(tk.Frame):
         self.controller = controller
         label = tk.Label(self, text="Select your Character", font=controller.title_font)
         label.pack(side="top", fill="x", pady=10)
-        button = tk.Button(self, text="Go to the start page",
+        button1 = tk.Button(self, text="Go to the start page", width=15,
                            command=lambda: controller.show_frame("StartPage"))
-        button.pack()
+        button2 = tk.Button(self, text="Spike", width=15,
+                           command=lambda: controller.show_frame("PlayPage"))
+        button3 = tk.Button(self, text="Jett", width=15,
+                           command=lambda: controller.show_frame("PlayPage"))
+        button4 = tk.Button(self, text="Faye", width=15,
+                           command=lambda: controller.show_frame("PlayPage"))
+        button5 = tk.Button(self, text="Ed", width=15,
+                           command=lambda: controller.show_frame("PlayPage"))
+        button1.pack()
+        button2.pack()
+        button3.pack()
+        button4.pack()
+        button5.pack()
 
 
 class Tutorial(tk.Frame):
@@ -80,6 +92,9 @@ class Tutorial(tk.Frame):
         self.controller = controller
         label = tk.Label(self, text="How to Play", font=controller.title_font)
         label.pack(side="top", fill="x", pady=10)
+        label2 = tk.Label(self, text="i'll fill this out later")
+        label2.pack(side="top", fill="x", pady=10)
+
         button = tk.Button(self, text="Go to the start page",
                            command=lambda: controller.show_frame("StartPage"))
         button.pack()
